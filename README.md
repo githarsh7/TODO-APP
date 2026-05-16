@@ -1,16 +1,88 @@
-# React + Vite
+# Modern Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern animated Todo App with an Indian-inspired UI, smooth interactions, responsive layout, glassmorphism styling, elegant spacing, and gradient themes. Includes task management, status filtering, update functionality, and clean card animations for a polished user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Add, update, and delete todos
+- Mark tasks as completed
+- Responsive design
+- Animated UI interactions
+- Gradient themed interface
+- Task filtering system
+- Modern card layout
+- Clean and organized spacing
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/githarsh7/TODO-APP.git
+```
+
+Go to the project folder:
+
+```bash
+cd TODO-APP
+```
+
+Run the project by opening:
+
+```bash
+index.html
+```
+
+---
+
+## Project Structure
+
+```bash
+TODO-APP/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+---
+
+## Future Improvements
+
+- Dark and light mode
+- Local storage support
+- Drag and drop todos
+- Due dates and reminders
+- Task categories
+
+---
+
+## Repository Link
+
+https://github.com/githarsh7/TODO-APP
+
+---
+
+
+## Connect With Me 🤝 :
+- LinkedIn : [HARSHAA SG](https://www.linkedin.com/in/harshaasg)  
+- Gmail : harshaavardhan8@gmail.com
+
+⭐ Feel free to fork this project and improve it!
+## Author
+
+Harshaa
