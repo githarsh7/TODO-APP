@@ -356,7 +356,7 @@ h1::after {
 
   border-radius: var(--radius-btn);
 
-  padding: 13px 22px;
+  padding: 13px 28px; /* ✅ more horizontal padding */
 
   transition:
     transform .32s var(--ease-float),
@@ -410,7 +410,7 @@ h1::after {
 
   color: #e07060;
 
-  padding: 13px 22px;
+  padding: 13px 28px; /* ✅ consistent padding */
 
   border: 1.5px solid rgba(180,60,40,.2);
 }
@@ -433,7 +433,7 @@ h1::after {
 
   color: var(--parchment);
 
-  padding: 13px 24px;
+  padding: 13px 28px; /* ✅ consistent padding */
 
   border: 1.5px solid rgba(212,175,55,.18);
 
@@ -537,7 +537,7 @@ h2 {
 
   border-radius: var(--radius-card);
 
-  padding: 32px 34px 30px 40px;
+  padding: 36px 34px 36px 40px; /* ✅ more vertical padding */
 
   margin-bottom: 28px;
 
@@ -562,7 +562,7 @@ h2 {
 }
 
 /* =========================
-   ACTION BUTTONS AREA
+   ACTION BUTTONS AREA  ← KEY FIX
 ========================= */
 
 .buttons {
@@ -571,19 +571,20 @@ h2 {
   justify-content: flex-end;
   align-items: center;
 
-  gap: 18px;
+  gap: 14px; /* ✅ was 18px but margin:4px was collapsing it — now gap is the sole spacing */
 
-  margin-top: 32px;
+  margin-top: 36px; /* ✅ more space above button row */
 
   flex-wrap: wrap;
 }
 
+/* ✅ Remove the old margin:4px overrides that were squishing things */
 .buttons .btn,
 .buttons button,
 .update-btn,
 .completed,
 .notCompleted {
-  margin: 4px;
+  margin: 0; /* ✅ let gap handle spacing, not margin */
 }
 
 /* =========================
@@ -596,9 +597,7 @@ h2 {
 
   border-radius: var(--radius-pill);
 
-  padding: 10px 22px;
-
-  margin-right: 8px;
+  padding: 10px 24px; /* ✅ slightly wider */
 
   font-size: 11px;
   font-weight: 800;
@@ -784,14 +783,18 @@ h2 {
     width: 100%;
   }
 
+  /* ✅ Mobile: stack buttons vertically with full width and bigger gaps */
   .buttons {
-    justify-content: center;
-    gap: 14px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 28px;
   }
 
   .buttons .btn,
+  .buttons button,
   .update-btn {
-    width: auto;
+    width: 100%;
     text-align: center;
   }
 }
